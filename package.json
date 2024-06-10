@@ -1,0 +1,61 @@
+{
+  "name": "loader-quark",
+  "version": "1.0.10",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist",
+    "src/components"
+  ],
+  "main": "./dist/loader-quark.umd.js",
+  "module": "./dist/loader-quark.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/es.js",
+      "require": "./dist/loader-quark.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "vite",
+    "load",
+    "loader",
+    "loading",
+    "loader-quark",
+    "quarksjs",
+    "quarks",
+    "quark",
+    "quarks-ui",
+    "components",
+    "component",
+    "loader component"
+  ],
+  "scripts": {
+    "generate:types": "vue-tsc --declaration --emitDeclarationOnly --outdir ./dist",
+    "dev": "vite",
+    "build": "vite build && npm run generate:types",
+    "preview": "vite preview",
+    "build-only": "vite build"
+  },
+  "dependencies": {
+    "user": "^0.0.0",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^18.19.3",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/tsconfig": "^0.5.0",
+    "npm-run-all2": "^6.1.1",
+    "typescript": "~5.3.0",
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.7.1",
+    "vue-tsc": "^1.8.25"
+  }
+}
