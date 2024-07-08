@@ -2,11 +2,15 @@
 
 This quark is a simple vue plugin with a loader component.
 
+<br/>
+
 ## Installation
 
 ```sh
 npm install loader-quark --save
 ```
+
+<br/>
 
 ## Setup
 
@@ -23,6 +27,8 @@ const app = createApp(App)
 app.use(Loader)
 ```
 Import the quark and its styles in the main javascript file and use it as a plugin in your app.
+
+<br/>
 
 ## Basic Usage
 
@@ -53,10 +59,12 @@ AnyComponent.js
 ```
 You can use easy conditional rendering to display the loader component for example when waiting for your data to load from backend.
 
-# DOCS
+<br/>
+
+## DOCS
 Full docs at [https://www.quarksjs.com/library/loader-quark/getting-started](...).
 
 Source code at [https://github.com/SamuelSlavik/LoaderQuark](...)
 
-# SUPPORT
+## SUPPORT
 Please support us by starring the repository or donate at [https://www.quarksjs.com/donate](...) to help us maintain the project and cover hosting expenses.
